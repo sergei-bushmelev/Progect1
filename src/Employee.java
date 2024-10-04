@@ -11,8 +11,7 @@ public class Employee {
         this.name = name;
         this.department = department;
         this.salary = salary;
-        count++;
-        id = count;
+        id = count++;
     }
 
     public int getId() {
@@ -23,13 +22,6 @@ public class Employee {
         return name;
     }
 
-    @Override
-    public String toString() {
-        return " name='" + name + '\'' +
-                ", id=" + id +
-                ", department=" + department +
-                ", salary=" + salary;
-    }
 
     public int getDepartment() {
         return department;
@@ -47,6 +39,13 @@ public class Employee {
         this.salary = salary;
     }
 
+    @Override
+    public String toString() {
+        return " name='" + name + '\'' +
+                ", id=" + id +
+                ", department=" + department +
+                ", salary=" + salary;
+    }
 
     @Override
     public boolean equals(Object o) {
