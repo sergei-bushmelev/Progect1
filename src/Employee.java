@@ -47,6 +47,12 @@ public class Employee {
                 ", salary=" + salary;
     }
 
+    public String toStringWithoutDepartment() {
+        return " name='" + name + '\'' +
+                ", id=" + id +
+                ", salary=" + salary;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
